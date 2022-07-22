@@ -1,0 +1,63 @@
+.color_teal{
+    color: rgba(7, 165, 165, 0.849);
+}
+
+.btn{
+background-color: rgba(7, 165, 165, 0.849);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center !important;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.btn_reverse{
+    background-color: white;
+    border: none;
+    color: rgba(7, 165, 165, 0.849);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px; 
+}
+
+.gal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gal *{
+    margin-bottom: 20px;
+}
+
+.gal_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.3333% - 13px));
+    gap: 40px;
+}
+
+.gal_grid img{
+    height: 18rem;
+    border-radius: 50%;
+}
+
+.arrow_left{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+
+.arrow_right{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+
+}
+

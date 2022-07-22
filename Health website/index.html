@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section class="header_area">
+            <div class="nav_area">
+                <div>
+                    <form class="search_bar" action="">
+                        <input class="color_w" type="text" value="" onkeypress="handleSearch()" placeholder="Search" id="searchInfo" name="searchInfo">
+                         <i class="fa fa-search color_w mouse_hand" onclick="searchClicked()"></i>
+                    </form>
+                </div>
+
+                <div class="nav_menu">
+                    <i onclick="expandMenu()" class="fa fa-bars color_w mouse_hand"></i>
+                </div>
+            </div>
+
+            <div id="nav_menu" class="display_none opened_nav_menu">
+                <a onclick="expandMenu()" class="btn mouse_hand" >X</a>
+                <a class="btn" href="">Foods</a>
+                <a class="btn" href="">Drinks</a>
+                <a class="btn" href="">Death</a>
+            </div>
+
+            <div class="header_text_area">
+                <div class="header_text">
+                    <h1 class=" main_h1 color_w">Natural Food</h1>
+                    <p class="color_w">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="header_buttons">
+                    <a class="btn" href="">READ MORE</a>
+                    <a class='btn_g' href=""><i class="fa fa-check-circle-o"></i> VIEW ALL RECIPES</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="img_grid_area img_grid_2">
+
+            <div class="img_area">
+                <img src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg" alt="">
+                <div class="img_text">
+                    <h3>product name 1</h3>
+                    <h2>$$ price $$</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eum. Verim assumenda!</p>
+                </div>
+            </div>
+
+            <div class="img_area">
+                <img src="https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_960_720.jpg" alt="">
+                <div class="img_text">
+                    <h3>product name 2</h3>
+                    <h2>$$ price $$</h2>
+                    <p>dipisicing elit. Veniam, eum. Veritatis velit suscipit laboriosam assumenda!</p>
+                </div>
+            </div>
+
+            <div class="img_area">
+                <img src="https://cdn.pixabay.com/photo/2016/11/23/18/31/pasta-1854245_960_720.jpg" alt="">
+                <div class="img_text">
+                    <h3>product name 3</h3>
+                    <h2>$$ price $$</h2>
+                    <p>pisicing elit. Veniam, eum. Veritatis velit suscipit laboriosam assumenda!</p>
+                </div>
+            </div>
+
+            <div class="img_area">
+                <img src="https://cdn.pixabay.com/photo/2017/08/17/19/40/ukrainian-dill-potatoes-2652561_960_720.jpg" alt="">
+                <div class="img_text">
+                    <h3>product name 4</h3>
+                    <h2>$$ price $$</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vosam assumenda!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner_area1">
+            <div class="banner_text">
+                <h1 class="main_h1 color_w">Healthy Evening</h1>
+                <p class="color_w">Duis ultricies lacus sed turpis tincidunt id aliquet risus. Bibendum est ultricies integer quis auctor. Id eu nisl nunc mi. Eget nunc scelerisque  in aliquam. Malesuada proin libero nunc consequat interdum.</p>
+                <a class="btn_g" href="">READ MORE</a>
+            </div>
+            <div class="banner_img"></div>    
+        </section>
+        
+        <section class="slider_area">
+            <div class="slider_head">
+                <h1 class="main_h1">Learn Cooking Online</h1>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="slider">
+                <i onclick="slide()" name="arrow_left" class="fa fa-caret-square-o-left arrow_left" style="font-size:3rem"></i>
+                <i onclick="slide()" name="arrow_right" class="fa fa-caret-square-o-right arrow_right" style="font-size:3rem"></i>
+                <div class="slider_grid3">
+                    <img id="slider_img1" src="https://cdn.pixabay.com/photo/2017/05/11/19/34/ice-2305159_960_720.jpg" alt="">
+                    <img id="slider_img2" src="https://cdn.pixabay.com/photo/2015/06/03/14/40/eating-796490_960_720.jpg" alt="">
+                    <img id="slider_img3" src="https://cdn.pixabay.com/photo/2017/03/03/18/40/quark-2114690_960_720.jpg" alt="">
+                </div>
+            </div>
+            <i class="fa fa-ellipsis-h" style="font-size:36px"></i>
+            <a href="#" class='btn_g'>READ MORE</a>
+        </section>
+
+        <section class="icecream_area">
+            <div class="flex_textbox_40 icecream_text">
+                <h1 class="color_w main_h1">Our Ice Cream</h1>
+                <p class="color_w">Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Ut faucibus pulvinar elementum  enim neque volutpat. Augue mauris augue neque gravida in.</p>
+                <a class="btn_g" href="">READ MORE</a>
+            </div>
+            <div class="icecream_img"></div>
+        </section>
+
+
+    </header>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header_area{
+    position: relative;
+    background: url('https://cdn.pixabay.com/photo/2016/10/07/13/36/tangerines-1721590_960_720.jpg') no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_area{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search_bar{
+    background: transparent;
+    border: solid 0.5px white ;
+    padding: 5px 10px;
+}
+
+.search_bar input{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+
+.search_bar input:focus{
+    border: none;
+    background: transparent;
+}
+
+.search_bar button{
+    border: none;
+    background: transparent;
+}
+
+.nav_menu{
+    padding: 5px 10px;
+}
+
+.opened_nav_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opened_nav_menu a{
+    width: 40%;
+    margin:20px ;
+    padding: 5px 12px;
+}
+
+.opened_nav_menu a:first-child{
+    width: 20%;
+    align-self: flex-end;
+    
+}
+
+.header_text_area{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+.header_text{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+}
+
+.header_buttons{
+    margin-top: 20px;
+}
+
+.img_grid_area{
+    margin-bottom: 30px;
+}
+
+.banner_area1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background: rgb(252, 222, 88);
+}
+
+.banner_text{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-evenly;
+    margin: 5% 5% 15% 10%;
+    height: 100%;
+}
+
+.banner_text a{
+    width: 60%;
+}
+
+.banner_img{
+    width: 40%;
+    height: 100%;
+    background: url(https://cdn.pixabay.com/photo/2016/07/04/07/18/currants-1496075_960_720.jpg) center center/cover;
+} 
+.slider_area{
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.slider_head p{
+    width: 60%;
+}
+
+.slider{
+    position: relative;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.slider i{
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+}
+
+.arrow_left{
+    left:20px;
+}
+
+.arrow_right{
+    right: 20px;
+}
+
+.icecream_area{
+    height: 90vh;
+    background-color: rgb(247, 229, 71);
+    display: flex;
+    flex: 1;
+}
+
+.icecream_text{
+    margin: 40px 10px 40px 100px;
+}
+
+.icecream_img{
+    margin: auto auto auto 0px;
+    width: 40%;
+    height: 80%;
+    background: url('https://cdn.pixabay.com/photo/2014/01/16/00/51/ice-cream-246161_960_720.jpg') center center/cover;
+}
